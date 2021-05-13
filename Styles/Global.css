@@ -1,0 +1,150 @@
+/* 
+COLOR PALATTE:
+https://coolors.co/49c6e5-54defd-fffbfa-00bd9d-8bd7d2
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.small-screen {
+    display: none;
+}
+
+.nav-top {
+    display:flex;
+    background-color: #00BD9D;
+    color: #FFFBFA;
+}
+
+[class^="nav-top-"] {
+    padding: 30px;
+    background-color: inherit;
+    font-size: 18px;
+}
+
+
+.nav-top-icon {
+    /* justify-self: flex-end; */
+    font-size: 23px;
+}
+
+.right {
+    flex: 1 1 auto;
+    text-align: right;
+}
+
+.nav-top-logo {
+    padding: inherit;
+}
+
+.nav-top-logo img {
+    /* width: 120px; */
+    height: 80px;
+}
+
+.nav-top-box {
+    padding: 15px 15px 25px 15px;
+    margin-left: 15px;
+    
+}
+
+.nav-top-box > .box {
+    display: flex;
+    min-width: 250px;
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 10%;
+    height: 100%;
+    background-color: #8BD7D2;
+    margin-top: 4px;
+    color: #8BD7D2;
+}
+
+.nav-top-box > .box > i {
+    padding: 10px 15px;
+    font-weight: lighter;
+    color: #FFFBFA;
+}
+
+.nav-top-box > .box input {
+    border: none;
+    padding-top: 2px;
+    margin: 1px 3px;
+    height: 76%;
+    font-size: 15px;
+    min-width: 250px;
+    background-color: inherit;
+    color: #f0f3f7;
+}
+
+.nav-top-box > .box input:focus {
+    border: none;
+    outline: none;
+}
+
+.nav-top-link a, .nav-top-name a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (max-width:768px) {
+    [class*="nav-top-"] {
+        background-color: inherit;
+        padding: 16px;
+    }
+
+    .large-screen {
+        display: none;
+    }
+
+    .nav-top-icon {
+        font-size: 15px;
+        margin-top:5px;
+        padding-left: 5px;        
+    }
+
+    .nav-top-navigation-icon {
+        margin-right: 50px;
+    }
+
+    #search-icon-top {
+        margin-left: 30px;
+    }
+
+
+    .small-screen {
+        display: block;
+    }
+
+    .nav-top-search-close {
+        display: none;
+    }
+
+    .nav-top-logo {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .nav-top-name {
+        margin-top:2px;
+        margin-left: -5px;
+        font-weight: bold;
+        color: #f0f3f7;
+    }
+
+    
+
+    .nav-top-logo img {
+        padding-top: 2px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-top-search-box input {
+        border: none;
+        background-color: #FFFBFA;
+        color: #8BD7D2;
+        width: 70vw;
+    }
+}
